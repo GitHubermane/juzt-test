@@ -1,5 +1,14 @@
 node_modules
+
 build
+dist
+
 .eslintcache
 .eslintrc.json
-dist
+
+next.config.js
+
+postcss.config.js
+tailwind.config.ts
+
+tsconfig.json
