@@ -10,11 +10,6 @@
     "lint-es": "eslint . --cache --fix --ext js,jsx,ts,tsx",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pnpm run lint-es"
-    }
-  },
   "dependencies": {
     "next": "14.0.4",
     "react": "^18",
