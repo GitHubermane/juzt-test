@@ -5,21 +5,25 @@ type PropsType = {
   children: ReactNode;
   onClick: () => void;
   type?: BtnType;
+  isFullWidth?: boolean;
 };
 
 export const Button: FC<PropsType> = ({
   children,
   onClick,
   type = BtnType.primary,
+  isFullWidth,
 }) => {
   const isPrimary = type === BtnType.primary;
+
   const style = isPrimary ? 'btn-primary' : 'btn-danger';
+  const fullWidth = isFullWidth ? 'w-full flex justify-center' : '';
   return (
     <button
-      className={`${style}`}
+      className={`${style} ${fullWidth}`}
       onClick={onClick}
     >
-      {children}
+      <span className="flex items-center typography">{children}</span>
     </button>
   );
 };
