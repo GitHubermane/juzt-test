@@ -26,7 +26,7 @@ export const CarInfo = () => (
         alt="Car"
       />
       <div>
-        <h2 className="mb-3 font-bold text-base sm:text-xl md:text-4xl">{`${car.brand}, ${car.model}`}</h2>
+        <h2 className="mb-3 title">{`${car.brand}, ${car.model}`}</h2>
         <div className="flex justify-between flex-wrap md:flex-nowrap md:flex-col">
           <div className="flex flex-col">
             <span className="typography">{`Цена: ${car.price} руб.`}</span>
