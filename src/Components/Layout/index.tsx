@@ -8,6 +8,6 @@ type PropsType = {
 export const Layout: FC<PropsType> = ({ children }) => (
   <div className="px-6 py-3">
     <Header />
-    {children}
+    <div className="mt-5">{children}</div>
   </div>
 );
