@@ -1,5 +1,5 @@
-import type { FC, ReactNode } from "react";
-import { BtnType } from "./BtnType";
+import type { FC, ReactNode } from 'react';
+import { BtnType } from './BtnType';
 
 type PropsType = {
   children: ReactNode;
@@ -13,7 +13,7 @@ export const Button: FC<PropsType> = ({
   type = BtnType.primary,
 }) => {
   const isPrimary = type === BtnType.primary;
-  const style = isPrimary ? "btn-primary" : "btn-danger";
+  const style = isPrimary ? 'btn-primary' : 'btn-danger';
   return (
     <button
       className={`${style}`}
