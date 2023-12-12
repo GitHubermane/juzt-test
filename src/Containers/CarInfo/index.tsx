@@ -25,38 +25,22 @@ export const CarInfo = () => (
         src={car.img}
         alt="Car"
       />
-      <div className="flex flex-col">
+      <div>
         <h2 className="mb-3 font-bold text-base sm:text-xl md:text-4xl">{`${car.brand}, ${car.model}`}</h2>
-        <span className="typography">
-          Цена:
-          {car.price}
-          {' '}
-          руб.
-        </span>
-        <span className="typography">
-          Год выпуска:
-          {car.year}
-          {' '}
-          г.
-        </span>
-        <span className="typography">
-          Цвет:
-          {car.color}
-        </span>
-        <span className="typography">
-          Тип двигателя:
-          {car.engineType}
-        </span>
-        <span className="typography">
-          Трансмиссия:
-          {car.transmission}
-        </span>
-        <span className="typography">
-          Запас хода:
-          {car.powerReserve}
-          {' '}
-          км
-        </span>
+        <div className="flex justify-between flex-wrap md:flex-nowrap md:flex-col">
+          <div className="flex flex-col">
+            <span className="typography">{`Цена: ${car.price} руб.`}</span>
+            <span className="typography">{`Год выпуска: ${car.year}`}</span>
+            <span className="typography">{`Цвет: ${car.color}`}</span>
+          </div>
+          <div className="flex flex-col">
+            <span className="typography">{`Тип двигателя: ${car.engineType}`}</span>
+            <span className="typography">{`Трансмиссия: ${car.transmission}`}</span>
+            <span className="typography">
+              {`Запас хода: ${car.powerReserve} км`}
+            </span>
+          </div>
+        </div>
         <div>
           <span className="typography">Комплектация: </span>
           <ul className="list-disc list-inside">
