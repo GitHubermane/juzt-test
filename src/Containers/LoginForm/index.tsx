@@ -10,7 +10,7 @@ export const LoginForm = () => {
   const [password, setPassword] = useState('');
 
   const onHandleClick = () => {
-    setIsLogin(prev => !prev);
+    setIsLogin((prev) => !prev);
   };
 
   return (

@@ -10,7 +10,7 @@ const cars = [
     year: 2014,
   },
   {
-    id: 1,
+    id: 2,
     img: '',
     brand: 'Audi',
     model: 'Q3',
@@ -18,7 +18,7 @@ const cars = [
     year: 2014,
   },
   {
-    id: 1,
+    id: 3,
     img: '',
     brand: 'Audi',
     model: 'Q3',
@@ -26,7 +26,7 @@ const cars = [
     year: 2014,
   },
   {
-    id: 1,
+    id: 4,
     img: '',
     brand: 'Audi',
     model: 'Q3',
