@@ -12,3 +12,5 @@ postcss.config.js
 tailwind.config.ts
 
 tsconfig.json
+
+prisma
