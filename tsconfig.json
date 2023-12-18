@@ -23,6 +23,11 @@
         "name": "next"
       }
     ],
+    "paths": {
+      "@models/*": [
+        "../models/*"
+      ],
+    }
   },
   "include": [
     "next-env.d.ts",

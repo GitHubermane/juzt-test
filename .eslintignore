@@ -13,4 +13,6 @@ tailwind.config.ts
 
 tsconfig.json
 
-prisma
+models
+seeders
+migrations
